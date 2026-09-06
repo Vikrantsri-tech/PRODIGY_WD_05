@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather-container">
+
+        <h1>🌤 Weather App</h1>
+
+        <p class="subtitle">
+            Check current weather conditions anywhere
+        </p>
+
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+
+        <button id="locationBtn" class="location-btn">
+            📍 Use My Location
+        </button>
+
+
+        <!-- Loading -->
+
+        <div id="loading" class="loading">
+            Loading weather...
+        </div>
+
+
+        <!-- Error -->
+
+        <div id="error" class="error">
+        </div>
+
+
+        <!-- Weather Card -->
+
+        <div id="weatherCard" class="weather-card">
+
+            <div class="location">
+
+                <h2 id="cityName">
+                    City
+                </h2>
+
+                <p id="countryName">
+                    Country
+                </p>
+
+            </div>
+
+
+            <div class="weather-main">
+
+                <div id="weatherIcon" class="weather-icon">
+                    ☀️
+                </div>
+
+                <div>
+
+                    <div class="temperature">
+
+                        <span id="temperature">
+                            --
+                        </span>
+
+                        <span>°C</span>
+
+                    </div>
+
+                    <p id="weatherDescription">
+                        Weather
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Weather Details -->
+
+            <div class="weather-details">
+
+                <div class="detail">
+
+                    <span class="detail-icon">
+                        🌡️
+                    </span>
+
+                    <div>
+                        <p>Feels Like</p>
+                        <strong id="feelsLike">
+                            -- °C
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <span class="detail-icon">
+                        💧
+                    </span>
+
+                    <div>
+                        <p>Humidity</p>
+                        <strong id="humidity">
+                            -- %
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <span class="detail-icon">
+                        💨
+                    </span>
+
+                    <div>
+                        <p>Wind Speed</p>
+                        <strong id="windSpeed">
+                            -- km/h
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <span class="detail-icon">
+                        🌧️
+                    </span>
+
+                    <div>
+                        <p>Rain</p>
+                        <strong id="rain">
+                            -- mm
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Extra Information -->
+
+            <div class="extra-info">
+
+                <div>
+                    <span>🌅 Sunrise</span>
+                    <strong id="sunrise">--</strong>
+                </div>
+
+                <div>
+                    <span>🌇 Sunset</span>
+                    <strong id="sunset">--</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
